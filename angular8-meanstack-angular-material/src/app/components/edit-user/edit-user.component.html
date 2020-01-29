@@ -6,22 +6,22 @@
   
   <!-- Form -->
   <div class="inner-wrapper">
-    <form [formGroup]="studentForm" (ngSubmit)="updateStudentForm()" #resetStudentForm="ngForm" novalidate>
+    <form [formGroup]="userForm" (ngSubmit)="updateUserForm()" #resetUserForm="ngForm" novalidate>
       <!-- Left block -->
       <mat-card>
         <div class="controlers-wrapper">
           <!-- Name -->
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="Student name" formControlName="student_name">
-            <mat-error *ngIf="handleError('student_name', 'required')">
+            <input matInput placeholder="User name" formControlName="user_name">
+            <mat-error *ngIf="handleError('user_name', 'required')">
               You must provide a<strong>user name</strong>
             </mat-error>
           </mat-form-field>
   
           <!-- Email -->
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="Student email" formControlName="student_email">
-            <mat-error *ngIf="handleError('student_email', 'required')">
+            <input matInput placeholder="User email" formControlName="user_email">
+            <mat-error *ngIf="handleError('user_email', 'required')">
               You must provide a<strong>user email</strong>
             </mat-error>
           </mat-form-field>
